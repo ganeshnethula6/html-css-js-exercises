@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(223, 255, 175);
+}
+
+#form fieldset{
+    background-color: rgb(129, 215, 0);
+    font-family: cursive;
+    padding: 10px;
+}
+#formLegend{
+    text-align: center;
+    font-size: large;
+}
+#form table{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.inputs{
+    padding-left: 100px;
+    margin-left: 120px;
+}

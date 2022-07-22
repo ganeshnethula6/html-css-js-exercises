@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(200, 191, 191);
+    font-family:Arial, Helvetica, sans-serif;
+}
+#header{
+    background-color: white;
+}
+#header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  #header li {
+    float: right;
+  }
+  
+  #header li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    padding-top: 60px;
+    text-decoration: none;
+  }
+  
+  #header #logo {
+    float: left;
+    align-items: center;
+  }
+  
+  li :hover {
+    background-color: #111111;
+  }
+  #enroll{
+    background-color: orangered;
+    border: transparent;
+    height: 30px;
+    width: 80px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+/* 
+#header
+{
+    text-align: centers;
+}
+#header ul{
+    list-style: none;
+    background-color: white;
+}
+#header li{
+    float: right;
+    display: inline;
+    text-align: center;
+     text-decoration: none;
+     padding: 15px;
+}
+#header #logo{
+    float: left;
+    text-align: center;
+} */
+
+#formFieldset{
+  background-color: white;
+
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.pd{
+    border: 2px solid rgb(0, 229, 255);
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+}
+.req{
+    color: red;
+}
+.contd{
+    display: inline;
+}
+.labels{
+    padding-top: 20px;
+}
+.Edu-Det input{
+    width: 100%;
+}
+.Edu-Det textarea{
+    width: 100%;
+}
+#submitBtn{
+    padding-top: 20px;
+}
+#send{
+    margin: auto;
+    height: 13px;
+
+}
+#submitBtn button{
+    background-color: rgb(0, 162, 255);
+    color: white;
+    width: 60%;
+    border-color: transparent;
+    height: 50px;
+    display: inline;
+}
+.inputs{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}

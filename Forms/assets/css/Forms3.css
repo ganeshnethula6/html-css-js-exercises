@@ -1,0 +1,56 @@
+#form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: yellow;
+}
+#form td{
+    padding-top: 20px;
+}
+#header,#tableFooter{
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: orange;
+    height: 40px;
+}
+#tableFooter
+{
+   padding-left: 60%;
+}
+#formTitle{
+
+   padding-top:10px ;
+
+}
+#formTable{
+    background-color: rgb(49, 42, 42);
+}
+
+
+.lables{
+    text-align: right;
+    padding-right: 10px;
+}
+#submit{
+    background-color: rgb(8, 228, 8);
+    border: transparent;
+    height: 30px;
+    width: 80px;
+    color: white;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+#cancel{
+    background-color: red;
+    border: transparent;
+    height: 30px;
+    width: 80px;
+    color: white;
+    border-radius: 5px;
+}
+.inputs{
+    width: 300px;
+}
+.inputs select{
+   max-width: 100px;
+}

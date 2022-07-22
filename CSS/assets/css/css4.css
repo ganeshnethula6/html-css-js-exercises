@@ -1,0 +1,30 @@
+h2{
+    padding:20px;
+}
+p{
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+}
+#green,#orange,#blue{
+    height: 150px;
+}
+
+#green{
+    background-color: lightgreen;
+}
+#yellow{
+    background-color: yellow;
+    height: 400px;
+}
+#orange{
+    background-color: orange;
+}
+#red{
+    background-color: lightpink;
+    height: 400px;
+}
+#blue{
+    background-color: lightblue;
+}

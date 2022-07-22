@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/app.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-light">
+
+        <div class="container pt-4 justify-content-center">
+            <div class="header title m-3" id="title">
+                <h2>Job Application</h2>
+            </div>
+            <form id="form" action="./action_page.php" method="post">
+                <div class="header">
+                    <h5>Full Name</h2>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <label class="text-muted">First Name<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control error" onclick="validateFirstName(value)"
+                            onchange="validateFirstName(value)" id="firstName" placeholder="Enter First Name"
+                            name="fName" required>
+                        <small id="fname-error-text" class="text-danger"></small>
+                    </div>
+                    <div class="col">
+                        <label class="text-muted">Last Name<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" onclick="validateLastName(value)"
+                            onchange="validateLastName(value)" id="lastName" placeholder="Enter Last Name" name="lName"
+                            required>
+                        <small id="lname-error-text" class="text-danger"></small>
+                    </div>
+                </div>
+                <div class="header mt-3">
+                    <h5>Date of Birth</h2>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <label class="text-muted">DOB<span class="text-danger">*</span></label>
+                        <input type="date" id="dob" class="form-control" onclick="validateDob(value)"
+                            onchange="validateDob(value)" required>
+                        <small id="dob-error-text" class="text-danger"></small>
+                    </div>
+                </div>
+
+                <div class="header mt-3">
+                    <h5>Gender<span class="text-danger">*</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col " style="display:inline-flex">
+                        <div class="form-check ms-3">
+                            <input type="radio" class="form-check-input " id="male" name="gender" value="male" checked>
+                            <label class="form-check-label" for="radio1">Male</label>
+                        </div>
+                        <div class="form-check  ms-3">
+                            <input type="radio" class="form-check-input" id="female" name="gender" value="female">
+                            <label class="form-check-label" for="radio2">Female</label>
+                        </div>
+                        <div class="form-check  ms-3">
+                            <input type="radio" class="form-check-input" id="others" name="gender" value="others">
+                            <label class="form-check-label">Others</label>
+                        </div>
+                        <small id="gender-error-text" class="text-danger"></small>
+                    </div>
+                </div>
+
+
+                <div class="header mt-3">
+                    <h5>Address</h2>
+                </div>
+                <div class="row mt3">
+                    <div class="col">
+                        <label class="text-muted">Street<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" onclick="validateStreet(value)"
+                            onchange="validateStreet(value)" placeholder="H:No/Street/Locality/Mandal" id="streetAd"
+                            name="streetAddress" required>
+                        <small id="street-error-text" class="text-danger"></small>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <label class="text-muted">City<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" onclick="validateCity(value)"
+                            onchange="validateCity(value)" placeholder="City" id="cityAd" name="city" required>
+                        <small id="city-error-text" class="text-danger"></small>
+                    </div>
+                    <div class="col">
+                        <label class="text-muted">State<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" onclick="validateState(value)"
+                            onchange="validateState(value)" placeholder="State" id="stateAd" name="state" required>
+                        <small id="state-error-text" class="text-danger"></small>
+                    </div>
+                    <div class="col">
+                        <label class="text-muted">Pincode<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" onclick="validateZipcode(value)"
+                            onchange="validateZipcode(value)" placeholder="00000" maxlength="5" id="zipcode"
+                            name="zipcode" required>
+                        <small id="zipcode-error-text" class="text-danger"></small>
+                    </div>
+                </div>
+                <div class="header mt-3">
+                    <h5>Contact Details</h2>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <label class="text-muted">Email<span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" onclick="validateEmail(value)"
+                            onchange="validateEmail(value)" id="email" placeholder="Enter email" name="email" required>
+                        <small id="email-error-text" class="text-danger"></small>
+
+                    </div>
+                    <div class="col">
+                        <label class="text-muted">Mobile<span class="text-danger">*</span></label>
+                        <input type="input" class="form-control" onclick="validatemobileNumber(value)"
+                            onchange="validatemobileNumber(value)" id="mobileNumber" maxlength="10"
+                            placeholder="Enter Mobile Number" name="mobileNumber" required>
+                        <small id="mobile-error-text" class="text-danger"></small>
+                    </div>
+                </div>
+
+                <div class="header mt-3">
+                    <h5>Education Details</h2>
+                </div>
+                <div class="row mt3">
+                    <div class="col">
+                        <label class="text-muted">College Name<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" onclick="validateClgName(value)"
+                            onchange="validateClgName(value)" placeholder="Enter the College name" id="clgName"
+                            name="clgName" required>
+                        <small id="clgName-error-text" class="text-danger"></small>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <label class="text-muted">Course<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" onclick="validateCourse(value)"
+                            onchange="validateCourse(value)" placeholder="B.Tech/M.Tech/BSc/MSc...." id="course" name="course" required>
+                        <small id="course-error-text" class="text-danger"></small>
+                    </div>
+                    <div class="col">
+                        <label class="text-muted">Year of Passing<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" onclick="validateYop(value)"
+                            onchange="validateYop(value)" maxlength="4" placeholder=" Enter year of passing" id="yop" name="yop" required>
+                        <small id="yop-error-text" class="text-danger"></small>
+                    </div> 
+                    <div class="col">
+                        <label class="text-muted">CGPA<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" onclick="validateCgpa(value)"
+                            onchange="validateCgpa(value)" placeholder="Enter the CGPA" maxlength="5" id="cgpa"
+                            name="cgpa" required>
+                        <small id="cgpa-error-text" class="text-danger"></small>
+                    </div>
+                </div>
+
+                <div class="header mt-3">
+                    <h5>Skills</h2>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <label class="text-muted">Primary Skill<span class="text-danger">*</span></label>
+                        <select class="form-select" onclick="validatePrimeSkills(value)"
+                            onchange="validatePrimeSkills(value)" id="prmSkill" name="prmSkill" value="" required>
+                            <option></option>
+                            <option>Java</option>
+                            <option>C/C++</option>
+                            <option>Python</option>
+                            <option>C#</option>
+                        </select>
+                        <small id="primSkill-error-text" class="text-danger"></small>
+                    </div>
+                    <div class="col">
+                        <label class="text-muted">Secondary Skill<span class="text-danger">*</span></label>
+                        <select class="form-select" onclick="validateSecSkills(value)"
+                            onchange="validateSecSkills(value)" id="secSkill" name="secSkill" value="" required>
+                            <option></option>
+                            <option>Java</option>
+                            <option>C/C++</option>
+                            <option>Python</option>
+                            <option>C#</option>
+                        </select>
+                        <small id="secSkill-error-text" class="text-danger"></small>
+                    </div>
+                </div>
+                <div class="header mt-3">
+                    <h5>How did you hear about us?</h2>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <label class="text-muted">How did you hear about us? (optional)</label>
+                        <select class="form-select" id="hearAboutUs" name="secSkill" required>
+                            <option></option>
+                            <option>Linkdin</option>
+                            <option>Social Media</option>
+                            <option>Campus</option>
+                            <option>Company Website</option>
+                            <option>Family/Friends</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <button id="submitBtn" type="button" onclick="validate()"
+                            class="btn btn-primary btn">Submit</button>
+                        <button type="reset" class="btn btn-secondary btn">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

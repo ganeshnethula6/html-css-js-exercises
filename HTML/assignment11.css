@@ -1,0 +1,22 @@
+#left
+{
+    text-align: left;
+    color:green;
+   
+}
+#right
+{
+    text-align: right;
+    color: red;
+   
+}
+#center
+{
+    text-align: center;
+    color: blue;
+   
+}
+div{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,46 @@
+
+div{
+    margin: 10px;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+    background-color: white;
+
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 20%;
+    padding: 30px;
+}
+#yellow{
+    display:inline-table;
+    width: 18%;
+    height: 650px;
+    background-color: yellow;
+}
+#red{
+    display:inline-table;
+    width:18%;
+    height: 650px;
+    background-color: pink;
+}
+#green{
+    display:inline-table;
+    width: 18%;
+    height: 650px;
+    background-color: green;
+}
+#orange{
+    display:inline-table;
+    width: 20%;
+    height: 650px;
+    background-color: orange;
+}
+#blue{
+    display:inline-table;
+    width: 10%;
+    height: 650px;
+    background-color: lightskyblue;
+}

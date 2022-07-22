@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form4</title>
+    <link rel="stylesheet" href="assets/css/Forms4.css">
+</head>
+<body>
+    <div id="header">
+
+        <ul>
+          <li id="logo"><img src="./assets/images/gradiousicon.png"  alt="Gradious Icon"></li>
+          <li><a href="#home"><button id="enroll" type="submit">Enroll</button></a></li>
+          <li><a href="#home">FAQ's</a></li>
+          <li><a href="#home">Fees</a></li>
+          <li><a href="#home">Our Teams</a></li>
+          <li><a href="#home">
+            <select name="course details" id="cd">
+            <option value="">course details</option>
+            <option value="cse">cse</option>
+        </select></a></li>
+        </ul>
+        <br>
+        <hr>
+        <h1 style="text-align: center;">Student Enrolment</h1>
+        </div>
+       
+
+    
+    <div id="form">
+        <fieldset id="formFieldset">
+        <form action="submit">
+           
+            <p>Please fill in the details so that we can process with the application</p>
+            <p>Our administrator team will take 48 hours process your details</p>
+            <h2>Personal Details</h2>
+            <table id="formTable">
+                <tr >
+                    <td class="labels">
+                        <label class="personal-details" style="color:rgb(0, 132, 255);" for="name">Name<span class="req">*</span></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="inputs">
+                        <input type="text" name="firstName" id="fn" class="pd" placeholder="First">
+                    </td>
+                    <td class="inputs">
+                        <input type="text" name="lastName" id="ln" class="pd" placeholder="Last">
+                    </td>
+                </tr>
+                <tr >
+                    <td class="labels"><label class="personal-details" for="email">Email<span class="req">*</span></label></td>
+                    <td class="labels"><label class="personal-details" for="email">Phone<span class="req">*</span></label></td>
+                </tr>
+                <tr>
+                    <td class="inputs">
+                        <input type="text" name="email" id="email" class="pd" placeholder="Email">
+                    </td>
+                    <td class="inputs">
+                        <input type="text" name="email" id="email" class="pd" placeholder="#### #######">
+                    </td>
+                </tr>
+                <tr>
+                    <td  class="labels"><label class="personal-details" for="email">Adress<span class="req">*</span></label></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="inputs">
+                        <input type="text" name="street" id="street" class="pd" placeholder="SreetAddress" style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="inputs">
+                        <input type="text" name="city" id="city" class="pd" placeholder="city">
+                    </td>
+                    <td class="inputs">
+                        <input type="text" name="state" id="state" class="pd" placeholder="State">
+                    </td>
+                </tr>
+            </table>
+            <h2>Education Details</h2>
+            <div class="Edu-Det">
+            <div class="labels">
+                <label for="hd-qual" class="labels">Higest Degree/Qualification</label>
+                <p>What is the highest level of education you have completed? Example Btech(CSE>, MCA, BE(Mtech)</p>
+                <input type="text" name="hd" id="hd" class="pd" >
+            </div>
+            <div class="labels">
+                    <label for="hd-qual" class="labels">Current/Last College you Studied</label>
+                    <p>if you are currently pursuing, mention the month and year you will be passing out</p>  
+                    <input type="text" name="lc" id="lc" class="pd" >
+            </div>
+            <div class="labels">
+                 <label for="hd-qual" class="labels">How did you find out about us?</label>
+                 <p>If you stumbled upon us online, on what website or platform was it?</p>  
+                <textarea type="text" name="lc" id="lc" class="pd" ></textarea>
+            </div>
+            <div id="submitBtn">
+                <center><Button ><span><img id="send" src="./assets/images/send-icon.png" alt="submit" ></span><span> Submit my Applicataion</span></Button ></center>
+            </div>
+            </div>
+        </form>
+    </fieldset>
+    </div>
+</body>
+</html>

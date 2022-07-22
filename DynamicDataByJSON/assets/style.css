@@ -1,0 +1,63 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(40, 40, 40);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(244, 240, 240);
+}
+
+.table-container {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(224, 220, 220);
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+  border-radius: 3px;
+  border: 1px solid lightblue;
+}
+.fullName {
+  width: 25%;
+  height: 40px;
+  background-color: white;
+}
+.age {
+  width: 10%;
+  height: 40px;
+  background-color: white;
+}
+.mobile {
+  width: 20%;
+  height: 40px;
+  background-color: white;
+}
+.email {
+  width: 25%;
+  height: 40px;
+  background-color: white;
+}
+.city {
+  width: 20%;
+  height: 40px;
+  background-color: white;
+}
+.heading {
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+  height: 70px;
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.even {
+  background-color: lightblue;
+}

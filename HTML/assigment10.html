@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment10</title>
+    <style>
+        #newWindow:hover {
+            cursor: pointer;
+            color: blue;
+        }
+
+        #newWindow {
+            color: green;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body style="background-color:antiquewhite; text-align: center;">
+    <h1>Hyperlink operations with target values </h1>
+    <p><a href="http://www.gradious.com" target="_blank" rel="noopener noreferrer">Click here to open in the new tab</a>
+    </p>
+    <p><a href="http://www.gradious.com" target="_self" rel="noopener noreferrer">Click here to open in the same tab</a>
+    </p>
+    <p id="newWindow" onclick="myFunction()"><a>Click here to open in the new window</a></p>
+
+    <script>
+        function myFunction() {
+            window.open("http://www.gradious.com", 'newwindow', 'with=1000,height=1000');
+            return false;
+        }
+    </script>
+</body>
+
+</html>

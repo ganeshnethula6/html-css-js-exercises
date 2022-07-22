@@ -1,0 +1,72 @@
+div{
+    margin: 10px;
+}
+.yellow{
+   height: 200px;
+   background-color: yellow;
+}
+.yellowPara{
+    display: inline;
+    float: left;
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 150px;
+}
+.redPara{
+    display: inline;
+    justify-content: center;
+    float: right;
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+    margin-right: 30px;
+    width: 150px;
+}
+@media screen and (min-width: 300px) {
+    
+    .redPara{
+        display: inline;
+        justify-content: center;
+        float: right;
+        background-color: white;
+        padding: 20px;
+        margin-top: 40px;
+        margin-right: 20px;
+        width: 150px;
+    }
+}
+#yell1{
+    width: 200px;
+}
+h2{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.org,.blue{
+    display: inline-table;
+    height: 655px;
+
+}
+.org{
+    width: 70%;
+}
+.blue{
+    background-color: lightblue;
+    width: 25%;
+}
+.orange,.red,.green{
+    display: block;
+    height: 200px; ;
+    width: auto;
+}
+.orange{
+    background-color: orange;
+}
+.red{
+    background-color: pink;
+}
+.green{
+    background-color: lightgreen;
+}

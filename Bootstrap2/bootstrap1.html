@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./css/style1.css">
+    <script src="./jss/app1.js"></script>
+</head>
+<body>
+    <div class="container" >
+        <h2>This is the Example of Modal</h2>
+        <p>Click on the button to open the Modal</p>
+        <button class="btn btn-blue" data-target="modal" id="openModal" onclick="openModal()">Open Modal</button>
+
+        <div class="modal" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Modal title</h2>
+                        <button type="button" id="modalDismiss" data-dismiss="modal" onclick="dismisModal(id)"class="btn btn-dark"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.....</p>
+                    </div>
+                    <div class="modal-footer">
+                       <span class="modal-footer-btn"> <button type="button" id="modalCancel" data-dismiss="modal" onclick="dismisModal(id)"  class="btn btn-grey">Close</button></span>
+                       <span class="modal-footer-btn"> <button type="button"  class="btn btn-blue">Save changes</button></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

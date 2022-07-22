@@ -1,0 +1,75 @@
+.footer {
+
+  border-top: #000 1px solid;
+  background-color: #333333;
+}
+
+#header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+#header li {
+  float: right;
+}
+
+#header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  padding-top: 60px;
+  text-decoration: none;
+}
+
+#header #logo {
+  float: left;
+  align-items: center;
+}
+
+li :hover {
+  background-color: #111111;
+}
+
+.footer {
+  color: white;
+}
+
+.footer li {
+  list-style-type: none;
+}
+
+.mainbody {
+  min-height: 500px;
+  width: 100%;
+  background-image: url("./images/wokingtable2.jpg");
+  background-attachment: local;
+  background-size: cover;
+}
+
+.mainbody .mainTag {
+  text-align: right;
+  color: rgba(54, 121, 247, 0.871);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+}
+
+.mainbody #tag {
+  text-align: right;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#applyBtn {
+  background-color: orangered;
+  color: white;
+  width: 150Px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}

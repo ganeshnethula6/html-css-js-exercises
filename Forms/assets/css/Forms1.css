@@ -1,0 +1,21 @@
+table, th, td {
+    border: 1px solid black;
+  }
+  li{
+    list-style-type: none;
+  }
+  table{
+    background-color: rgb(248, 245, 245);
+    width: 100%;
+  }
+  #form{
+align-items: center;
+display: flex;
+justify-content: center;
+  }
+.btn input{
+    height:40px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}

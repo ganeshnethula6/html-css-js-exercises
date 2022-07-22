@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 2</title>
+    <link rel="stylesheet" href="./css/style2.css">
+    <script src="./jss/app2.js"></script>
+</head>
+<body>
+    <div class="container">
+            <ul class="nav ">
+                <li class="nav-item">
+                    <a class="nav-link active"  onclick="openTab(0)" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="openTab(1)"  href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="openTab(2)" href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane container" style="display: block;" id="home">
+                    <p class="p-3"><b>This is some placeholder content the Home tab's associated content.</b> Clicking another tab will toggle
+                        the visibility of this one for the next. The tab JavaScript swaps classes to control the content
+                        visibility and styling. You can use it with tabs, pills, and any other <span class="text-danger">nav-</span>powered navigation.</p>
+                </div>
+                <div class="tab-pane container" id="profile">
+                    <p class="p-3"><b>This is some placeholder content the Profile tab's associated content.</b> Clicking another tab will toggle
+                        the visibility of this one for the next. The tab JavaScript swaps classes to control the content
+                        visibility and styling. You can use it with tabs, pills, and any other <span class="text-danger">nav-</span>powered navigation.
+                    </p>
+                </div>
+                <div class="tab-pane container" id="contact">
+                    <p class="p-3"><b>This is some placeholder content the Contact tab's associated content.</b> Clicking another tab will toggle
+                        the visibility of this one for the next. The tab JavaScript swaps classes to control the content
+                        visibility and styling. You can use it with tabs, pills, and any other <span class="text-danger">nav-</span>powered navigation.
+                    </p>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms1</title>
+    <link rel="stylesheet" href="assets/css/Forms1.css">
+</head>
+<body>
+    <div id="form">
+        <form action="submit">
+            <table>
+                <tr>
+                    <th colspan="2" style="color: rgb(35, 130, 239);">Form</th>
+                </tr>
+                <tr>
+                    <td>Enter Name:</td>
+                    <td><input type="text" name="name" id="userName" placeholder="Enter the name"></td>
+                </tr>
+                <tr>
+                    <td>Enter Password:</td>
+                    <td><input type="password" name="password" id="userPassword"></td>
+                </tr>
+                <tr>
+                    <td>Enter Address</td>
+                    <td><textarea name="Addresss" id="userAddress" cols="21" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Select Game:</td>
+                    <td>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="Hockey" id="hockey">
+                                <label for="checkbox">Hockey</label></li>
+                            <li>
+                                <input type="checkbox" name="Football" id="football">
+                        <label for="checkbox">Football</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Badminton" id="badminton">
+                        <label for="checkbox">Badminton</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Cricket" id="cricket">
+                        <label for="checkbox">Cricket</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Volleyball" id="volleyball">
+                        <label for="checkbox">Volleyball</label>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <span><input type="radio" name="gender" id="male"> Male</span>
+                        <span><input type="radio" name="gender" id="female">Female</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select your Age</td>
+                    <td><select name="age" id="userAge">
+                        <option value="child">below 12</option>
+                        <option value="teen">13-19</option>
+                        <option value="young">20-40</option>
+                        <option value="old">above 60</option>
+                    </select></td>
+                </tr>
+                <tr >
+                    <th colspan="2">
+                        <input type="file" name="file" id="userFile">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2" class="btn" style="align-content: center;justify-content: center;">
+                        <input type="button" value="clickMe">
+                        <input type="button" value="Reset">
+                        <input type="button" value="Submit Form">
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

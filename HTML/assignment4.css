@@ -1,0 +1,10 @@
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+h1 {
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}

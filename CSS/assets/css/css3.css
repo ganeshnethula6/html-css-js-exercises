@@ -1,0 +1,36 @@
+#yellow,#green,#red,#OB{
+    margin: 10px;
+}
+h2{
+    padding:20px;
+}
+#green{
+    background-color: lightgreen;
+    height: 200px;
+}
+#yellow,#OB,#red{
+    display: inline-table;
+    height: 400px;
+    width: 30%;
+}
+#yellow{
+    background-color: yellow;
+}
+#red{
+    background-color: pink;
+}
+#orange,#blue{
+    height: 180px;
+}
+#orange{
+    background-color: orange;
+}
+#blue{
+    background-color: lightblue;
+}
+p{
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+}
